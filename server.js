@@ -9,20 +9,15 @@ const cors = require("cors");
 const corsOptions = require("./config/corsOptions");
 const connectDB = require("./config/dbConn");
 const mongoose = require("mongoose");
+
 const PORT = process.env.PORT || 3500;
-
 console.log(process.env.NODE_ENV);
-
 connectDB();
 
 app.use(logger);
-
 app.use(cors(corsOptions));
-
 app.use(express.json());
-
 app.use(cookieParser());
-
 app.use("/", express.static(path.join(__dirname, "public")));
 
 app.use("/", require("./routes/root"));
