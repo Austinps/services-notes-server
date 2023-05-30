@@ -1,4 +1,4 @@
-const { logEvents } = require("./logger");
+import { logEvents } from "./logger.js";
 
 const errorHandler = (err, req, res, next) => {
   logEvents(
@@ -12,4 +12,4 @@ const errorHandler = (err, req, res, next) => {
   res.json({ message: err.message });
 };
 
-module.exports = errorHandler;
+export default errorHandler;
