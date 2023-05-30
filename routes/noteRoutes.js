@@ -1,7 +1,7 @@
 import { Router } from "express";
 import {
   getAllNotes,
-  createNewNote,
+  createNote,
   updateNote,
   deleteNote,
 } from "../controllers/notesController.js";
@@ -10,7 +10,7 @@ const router = Router();
 router
   .route("/")
   .get(getAllNotes)
-  .post(createNewNote)
+  .post(createNote)
   .patch(updateNote)
   .delete(deleteNote);
 

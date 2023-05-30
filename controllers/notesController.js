@@ -19,7 +19,7 @@ export const getAllNotes = asyncHandler(async (req, res) => {
   res.json(notesWithUser);
 });
 
-export const createNewNote = asyncHandler(async (req, res) => {
+export const createNote = asyncHandler(async (req, res) => {
   const { user, title, text } = req.body;
 
   if (!user || !title || !text) {

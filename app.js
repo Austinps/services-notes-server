@@ -3,7 +3,7 @@ import cookieParser from "cookie-parser";
 import path from "path";
 import { fileURLToPath } from "url";
 import { logger } from "./middleware/logger.js";
-import errorHandler from "./middleware/errorHandler.js";
+import { errorHandler } from "./middleware/errors.js";
 import cors from "cors";
 import corsOptions from "./config/corsOptions.js";
 import rootRouter from "./routes/root.js";

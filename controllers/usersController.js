@@ -13,7 +13,7 @@ export const getAllUsers = asyncHandler(async (req, res) => {
   res.json(users);
 });
 
-export const createNewUser = asyncHandler(async (req, res) => {
+export const createUser = asyncHandler(async (req, res) => {
   const { username, password, roles } = req.body;
   console.log(req.body);
 
