@@ -33,7 +33,6 @@ express-async-handler: ^1.2.0
 mongoose: ^7.1.1
 mongoose-sequence: ^5.3.1
 uuid: ^9.0.0
-These dependencies are automatically installed when running the npm install command.
 
 ## Project Structure
 
