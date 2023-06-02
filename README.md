@@ -50,4 +50,4 @@ The project structure is as follows:
 
 ## License
 
-This project is licensed under the ISC License. See the LICENSE file for more details.
+This project is private and the license information is not available.
